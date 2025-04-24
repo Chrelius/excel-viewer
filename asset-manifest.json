@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/excel-viewer/static/css/main.7ea97695.css",
+    "main.js": "/excel-viewer/static/js/main.556cd172.js",
+    "static/js/453.6cb51128.chunk.js": "/excel-viewer/static/js/453.6cb51128.chunk.js",
+    "index.html": "/excel-viewer/index.html",
+    "main.7ea97695.css.map": "/excel-viewer/static/css/main.7ea97695.css.map",
+    "main.556cd172.js.map": "/excel-viewer/static/js/main.556cd172.js.map",
+    "453.6cb51128.chunk.js.map": "/excel-viewer/static/js/453.6cb51128.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7ea97695.css",
+    "static/js/main.556cd172.js"
+  ]
+}
