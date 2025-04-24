@@ -1,8 +1,8 @@
 import React, { useCallback, useRef, useState } from 'react';
 import { useExcelData } from '../hooks/useExcelData';
 import { CellPosition } from '../types/excel.types';
+import { appConfig } from '../config/appConfig';
 import './ExcelViewer.css';
-import { version } from '../../package.json';
 
 const ExcelViewer: React.FC = () => {
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -42,9 +42,10 @@ const ExcelViewer: React.FC = () => {
     
     return (
       <div className="version-info">
-        <span>Version: {version}</span>
-        <span>Last Updated: {currentTime}</span>
-        <span>User: {process.env.REACT_APP_USERNAME || 'Guest'}</span>
+        <span>Version: {appConfig.version}</span>
+        <span>Build Date: {appConfig.buildDate} {appConfig.buildTime}</span>
+        <span>Current Time (UTC): {currentTime}</span>
+        <span>User: {appConfig.username}</span>
       </div>
     );
   };
